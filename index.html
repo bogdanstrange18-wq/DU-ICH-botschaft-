@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ich-Botschaften Arena</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="start-screen" id="startScreen">
+      <div class="start-card">
+        <p class="eyebrow">Klassenmodus</p>
+        <h1>Ich-Botschaften Arena</h1>
+        <form id="nameForm" class="name-form">
+          <label for="nameInput">Dein Nickname</label>
+          <input id="nameInput" name="nickname" type="text" maxlength="24" autocomplete="nickname" placeholder="z.B. Alex" required />
+          <button class="primary-button" type="submit">Spiel starten</button>
+        </form>
+        <p class="start-note" id="connectionNote">Wenn die Klasse ueber den Server spielt, erscheint der erste Gewinner automatisch bei allen.</p>
+      </div>
+    </section>
+
+    <main class="game-shell">
+      <section class="stage" aria-live="polite">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Kommunikationstraining</p>
+            <h1>Ich-Botschaften Arena</h1>
+          </div>
+          <div class="player-box">
+            <span id="playerName">Gast</span>
+            <button class="sound-toggle" id="soundToggle" type="button" aria-label="Ton umschalten">
+              <span id="soundIcon">♪</span>
+            </button>
+          </div>
+        </header>
+
+        <div class="score-strip">
+          <span id="levelLabel">Frage 1 / 12</span>
+          <strong id="prizeLabel">50 Punkte</strong>
+        </div>
+
+        <article class="question-panel">
+          <p class="scenario-label">Situation</p>
+          <h2 id="questionText"></h2>
+        </article>
+
+        <div class="answers" id="answers"></div>
+
+        <div class="lifelines" aria-label="Hilfen">
+          <button id="fiftyButton" type="button">50:50</button>
+          <button id="hintButton" type="button">Tipp</button>
+          <button id="swapButton" type="button">Tauschen</button>
+        </div>
+
+        <div class="feedback" id="feedback"></div>
+
+        <div class="controls">
+          <button class="primary-button" id="nextButton" type="button">Antwort einloggen</button>
+          <button class="ghost-button" id="restartButton" type="button">Neu starten</button>
+        </div>
+      </section>
+
+      <aside class="ladder" aria-label="Punkte-Leiter">
+        <div class="ladder-title">
+          <span>Gewinnleiter</span>
+          <strong id="safeLabel">Sicherung: 0</strong>
+        </div>
+        <ol id="ladderList"></ol>
+      </aside>
+    </main>
+
+    <div class="modal hidden" id="resultModal" role="dialog" aria-modal="true" aria-labelledby="resultTitle">
+      <div class="modal-card">
+        <p class="eyebrow">Spiel beendet</p>
+        <h2 id="resultTitle"></h2>
+        <p id="resultText"></p>
+        <button class="primary-button" id="modalRestart" type="button">Noch einmal spielen</button>
+      </div>
+    </div>
+
+    <div class="modal hidden winner-modal" id="winnerModal" role="dialog" aria-modal="true" aria-labelledby="winnerTitle">
+      <div class="modal-card winner-card">
+        <p class="eyebrow">Klassen-Sieg</p>
+        <h2 id="winnerTitle">Wir haben einen Gewinner!</h2>
+        <p id="winnerText"></p>
+        <button class="primary-button" id="winnerClose" type="button">Weiter ansehen</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
