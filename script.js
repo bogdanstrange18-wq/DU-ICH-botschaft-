@@ -1,137 +1,137 @@
-const prizes = [50, 100, 200, 300, 500, 1000, 2000, 4000, 8000, 16000, 32000, 64000];
+const prizes = [500, 1000, 10000, 50000, 75000, 100000, 150000, 200000, 250000, 500000, 750000, 1000000];
 
 const questions = [
   {
-    text: "Dein Mitschueler nimmt deinen Stift, ohne zu fragen. Welche Formulierung ist die vollstaendigste Ich-Botschaft?",
+    text: "Dein Mitschueler nimmt deinen Stift, ohne zu fragen. Welche Antwort ist eine vollstaendige Ich-Botschaft?",
     answers: [
-      "Ich bin aergerlich, wenn du meinen Stift ohne Fragen nimmst, weil ich ihn selbst brauche.",
-      "Ich finde es respektlos, dass du immer einfach meine Sachen nimmst.",
-      "Ich habe das Gefuehl, dass du meine Grenzen bewusst ignorierst.",
-      "Nimm meinen Stift nie wieder ohne vorher zu fragen."
+      "Ich bin veraergert, wenn mein Stift ungefragt genommen wird, weil ich ihn selbst brauche. Bitte frag mich vorher.",
+      "Du nimmst einfach dauernd meine Sachen ohne Erlaubnis, weil du ruecksichtslos bist. Hoer endlich auf damit!",
+      "Ich habe das Gefuehl, dass du mich absichtlich provozieren willst, weil du keinen Respekt hast. Lass das bitte!",
+      "Du musst sofort aufhoeren, meine Sachen ungefragt zu nehmen, weil sich das nicht gehoert. Leg ihn sofort hin!"
     ],
     correct: 0,
-    hint: "Achte auf beobachtbares Verhalten, eigenes Gefuehl, Wirkung und Wunsch - ohne Absicht zu unterstellen."
+    hint: "Formel fuer eine echte Ich-Botschaft: Konkrete Situation + eigenes Gefühl + Auswirkung/Beduerfnis + Bitte."
   },
   {
-    text: "Jemand unterbricht dich mehrmals im Gespraech. Was ist die beste Ich-Botschaft?",
+    text: "Jemand unterbricht dich mehrmals im Gespraech. Was ist eine echte Ich-Botschaft?",
     answers: [
-      "Ich fuehle mich von dir nicht ernst genommen, weil du immer dazwischenredest.",
-      "Ich finde, du solltest anderen im Gespraech endlich besser zuhoeren.",
-      "Du behandelst mich respektlos, wenn du mich unterbrichst.",
-      "Wenn ich unterbrochen werde, verliere ich den Faden und werde unsicher."
+      "Du laesst mich nie ausreden und quatschst dauernd dazwischen, weil du egoistisch bist. Hoer endlich damit auf!",
+      "Ich habe das Gefuehl, dass dich meine Meinung gar nicht interessiert und du mich einfach ignorieren willst.",
+      "Du musst sofort aufhoeren, mich staendig zu unterbrechen, weil das stoert. Lass mich gefaelligst ausreden!",
+      "Ich werde verunsichert, wenn ich unterbrochen werde, weil mir mein Gedanke wichtig ist. Bitte lass mich ausreden."
     ],
     correct: 3,
-    hint: "Auch ein Satz mit 'Ich' kann ein Vorwurf sein. Vermeide Worte wie 'immer' und Bewertungen der anderen Person."
+    hint: "Achtung vor Pseudo-Ich-Botschaften: 'Ich habe das Gefühl, dass du...' ist ein Vorwurf, kein echtes Gefühl."
   },
   {
-    text: "In der Gruppenarbeit erledigt ein Teammitglied seinen Teil nicht. Welche Antwort ist fair und klar?",
+    text: "In der Gruppenarbeit erledigt ein Teammitglied seinen Teil nicht. Welche Antwort ist eine klare Ich-Botschaft?",
     answers: [
-      "Ich habe Angst, dass du uns mit Absicht haengen laesst und nichts machst.",
-      "Ich mache mir Sorgen, wenn dein Teil fehlt, weil unsere Abgabe dann gefaehrdet ist.",
-      "Ich finde, du uebernimmst zu wenig Verantwortung in unserer Gruppe.",
-      "Ich bin genervt von deiner fehlenden Motivation fuer diese Aufgabe."
+      "Du laesst unsere ganze Gruppe im Stich und faulenzt nur herum, waehrend wir schuften. Mach endlich deinen Teil!",
+      "Ich mache mir Sorgen, wenn deine Folie fehlt, weil unsere Abgabe gefaehrdet ist. Lass uns das jetzt fertigmachen.",
+      "Ich habe das Gefuehl, dass du gar keine Lust auf unser Team hast und uns die Arbeit absichtlich ueberlaesst.",
+      "Du musst deinen Teil sofort fertigstellen, weil wir sonst eine schlechte Note bekommen. Arbeite jetzt endlich!"
     ],
     correct: 1,
-    hint: "Beschreibe die konkrete Auswirkung auf die Aufgabe und schlage einen naechsten Schritt vor."
+    hint: "Beschreibe die sachliche Auswirkung auf die Aufgabe und schlage einen naechsten Schritt vor."
   },
   {
-    text: "Ein Freund kommt 20 Minuten zu spaet. Welche Ich-Botschaft passt?",
+    text: "Ein Freund kommt 20 Minuten zu spaet. Welche Antwort ist eine richtige Ich-Botschaft?",
     answers: [
-      "Du hast mich wieder einmal einfach sitzen gelassen.",
-      "Ich finde es schade, dass Puenktlichkeit fuer dich offenbar nicht wichtig ist.",
-      "Ich werde unruhig, wenn ich ohne Nachricht warte, weil ich nicht weiss, ob du kommst.",
-      "Du bist echt unzuverlaessig, wenn du so spaet kommst."
+      "Du bist wieder einmal total unpuenktlich und laesst mich einfach warten, weil dir meine Zeit voellig egal ist.",
+      "Ich habe das Gefuehl, dass unsere gemeinsamen Treffen fuer dich unwichtig sind und du mich nicht schaetzt.",
+      "Ich werde unruhig, wenn ich ohne Nachricht warte, weil ich mir Sorgen mache. Gib mir naechstes Mal bitte Bescheid.",
+      "Du musst endlich lernen, puenktlich zu unseren Treffen zu erscheinen, weil man andere nicht warten laesst!"
     ],
     correct: 2,
-    hint: "Eine starke Ich-Botschaft bleibt bei der beobachtbaren Situation statt eine Eigenschaft zu bewerten."
+    hint: "Eine echte Ich-Botschaft beschreibt das eigene Gefühl und verzichtet auf Urteile ueber den Charakter."
   },
   {
-    text: "Deine Schwester macht die Musik laut, waehrend du lernst. Welche Antwort ist am besten?",
+    text: "Deine Schwester macht laute Musik, waehrend du lernst. Welche Formulierung ist eine Ich-Botschaft?",
     answers: [
-      "Ich fuehle mich provoziert, weil du genau weisst, dass ich lernen muss.",
-      "Ich finde deine Musik beim Lernen wirklich sehr ruecksichtslos.",
-      "Du musst mehr Ruecksicht nehmen, wenn ich fuer die Schule lerne.",
-      "Ich kann mich bei lauter Musik nicht konzentrieren und brauche jetzt Ruhe."
+      "Du bist extrem ruecksichtslos und machst dauernd Laerm, obwohl du genau weisst, dass ich fuer die Schule lerne!",
+      "Ich habe das Gefuehl, dass du mich mit deiner Musik absichtlich beim Lernen stoeren und provozieren willst.",
+      "Mach sofort die Musik aus und sei endlich leise, weil ich mich konzentrieren muss. Mach die Tuer sofort zu!",
+      "Ich kann mich bei lauter Musik nicht konzentrieren, weil ich morgen lerne. Ich brauche jetzt eine Stunde Ruhe."
     ],
     correct: 3,
-    hint: "Das Beduerfnis wird am klarsten, wenn du Situation, Wirkung und eine umsetzbare Bitte nennst."
+    hint: "Nenne deine eigene Situation, die konkrete Folge und eine umsetzbare Bitte."
   },
   {
-    text: "Ein Klassenkamerad lacht ueber deinen Fehler an der Tafel. Welche Reaktion ist eine Ich-Botschaft?",
+    text: "Ein Klassenkamerad lacht ueber deinen Fehler an der Tafel. Welche Reaktion ist eine echte Ich-Botschaft?",
     answers: [
-      "Ich fuehle, dass du mich vor allen kleinmachen wolltest.",
-      "Ich fuehle mich blossgestellt, wenn ueber meinen Fehler gelacht wird.",
-      "Ich finde, du bist nicht reif genug fuer so ein Verhalten vor allen.",
-      "Du bist vor allen anderen wirklich sehr gemein zu mir."
+      "Du bist einfach nur gemein und machst dich vor allen ueber mich lustig, weil du keinen Anstand im Leib hast!",
+      "Ich fuehle mich verletzt, wenn ueber Fehler gelacht wird, weil ich mitmache. Ich wunsche mir fairen Umgang.",
+      "Ich habe das Gefuehl, dass du mich vor der ganzen Klasse kleinmachen willst, um selber besser dazustehen.",
+      "Lach gefaelligst nicht so bloed ueber andere Leute, sondern kuemmere dich um deine eigenen Fehler an der Tafel!"
     ],
     correct: 1,
-    hint: "Gefuehle sind passend. Vermutungen ueber die Absicht oder Charakterurteile gehoeren nicht dazu."
+    hint: "Echte Gefühle beschreiben den eigenen Zustand (z.B. verletzt), nicht die vermutete Absicht des anderen."
   },
   {
-    text: "Im Chat antwortet jemand mit 'Ist doch egal' auf deine Idee. Welche Antwort ist konstruktiv?",
+    text: "Im Chat antwortet jemand mit 'Ist doch egal' auf deine Idee. Welche Ich-Botschaft passt?",
     answers: [
-      "Ich fuehle mich entmutigt, wenn meine Idee sofort als 'egal' bezeichnet wird.",
-      "Ich habe das Gefuehl, dass du meine Ideen grundsaetzlich schlecht findest.",
-      "Ich finde, du solltest meine Vorschlaege ernster nehmen.",
-      "Wenn du so antwortest, bist du unhoeflich."
+      "Ich bin enttaeuscht, wenn meine Idee als 'egal' abgetan wird, weil ich nachdenke. Ich wuensche mir Feedback.",
+      "Du bist im Chat total unhoeflich und machst alle meine Vorschlaege schlecht, weil du nicht nachdenken willst!",
+      "Ich habe das Gefuehl, dass du meine Beitraege grundsaetzlich wertlos findest und mich nicht ernst nimmst.",
+      "Nimm meine Beitraege gefaelligst ernster und antworte in Zukunft anstaendig, wenn ich etwas im Chat vorschlage!"
     ],
     correct: 0,
-    hint: "Konstruktiv heisst: das Zitat oder Verhalten benennen, eigenes Gefuehl erklaeren und eine Bitte formulieren."
+    hint: "Das konkrete Zitat benennen, das eigene Gefühl ausdrücken und eine Bitte formulieren."
   },
   {
-    text: "Dein Partner in einer Praesentation spricht viel laenger als abgesprochen. Was sagst du?",
+    text: "Dein Partner in einer Praesentation spricht viel laenger als abgesprochen. Was ist eine Ich-Botschaft?",
     answers: [
-      "Ich habe das Gefuehl, dass du die Praesentation an dich reissen willst.",
-      "Ich finde es unfair, dass du nie auf die abgesprochene Zeit schaust.",
-      "Ich werde nervoes, wenn mein Teil dadurch zu kurz kommt, weil ich vorbereitet bin.",
-      "Du musst jetzt aufhoeren, damit ich auch noch drankomme."
+      "Du redest viel zu viel und nimmst mir einfach meine ganze Zeit weg, weil du immer nur dich selber hoeren willst!",
+      "Ich habe das Gefuehl, dass du dich alleine in den Vordergrund draengen willst und mein Teil dir egal ist.",
+      "Ich werde nervoes, wenn die Zeit ueberschritten wird, weil mein Teil zu kurz kommt. Lass uns auf die Uhr achten.",
+      "Hoer jetzt auf zu reden und lass mich endlich vortragen, weil wir vereinbart haben, dass wir die Zeit teilen!"
     ],
     correct: 2,
-    hint: "Die beste Antwort macht die Auswirkung sichtbar, ohne Motive zu unterstellen, und bietet eine Loesung an."
+    hint: "Fokus auf die gemeinsame Auswirkung und die Loesung, ohne Absichten zu unterstellen."
   },
   {
-    text: "Ein Kunde beschwert sich laut, obwohl du ruhig helfen willst. Welche professionelle Ich-Botschaft passt?",
+    text: "Ein Kunde beschwert sich lautstark. Welche professionelle Ich-Botschaft passt?",
     answers: [
-      "Ihr unfreundlicher Ton ist wirklich nicht in Ordnung.",
-      "Ich finde, Sie sollten sich erst einmal beruhigen, bevor wir reden.",
-      "Ich habe den Eindruck, dass Sie nur streiten wollen und nicht zuhoeren.",
-      "Ich kann Ihnen besser helfen, wenn wir ruhig sprechen und das Problem klaeren."
+      "Sie sind extrem unfreundlich und schreien mich hier grundlos an, weil Sie sich ueberhaupt nicht im Griff haben!",
+      "Ich habe den Eindruck, dass Sie gar kein Interesse an einer Loesung haben, sondern nur Ihren Frust abladen wollen.",
+      "Beruhigen Sie sich erst einmal und sprechen Sie vernuenftig mit mir, sonst beende ich das Gespraech sofort!",
+      "Ich kann Ihr Anliegen besser verstehen, wenn wir ruhig sprechen, weil das hilft. Lass uns das in Ruhe klaeren."
     ],
     correct: 3,
-    hint: "Professionell bleiben heisst: die gemeinsame Loesung und die benoetigte Gespraechsform in den Mittelpunkt stellen."
+    hint: "Professionell bleiben: Eigene Rahmenbedingungen fuer das Gespraech benennen und Loesungsbereitschaft zeigen."
   },
   {
-    text: "In der Klasse wird ein Witz ueber deine Herkunft gemacht. Welche Ich-Botschaft ist klar und stark?",
+    text: "In der Klasse wird ein Witz ueber deine Herkunft gemacht. Welche klare Ich-Botschaft passt?",
     answers: [
-      "Ich habe das Gefuehl, dass ihr Vorurteile gegen meine Herkunft habt.",
-      "Ich fuehle mich verletzt, wenn meine Herkunft zum Witz gemacht wird.",
-      "Ich finde es schlimm, dass ihr so wenig Respekt fuer andere habt.",
-      "Solche Witze sind rassistisch und haben hier nichts verloren."
+      "Ihr seid alle total respektlos und habt nur dumme Vorurteile im Kopf, weil ihr gar nicht nachdenken wollt!",
+      "Ich fuehle mich verletzt, wenn Witze ueber meine Herkunft fallen, weil mir Respekt wichtig ist. Bitte lass das.",
+      "Ich habe das Gefuehl, dass ihr mich wegen meiner Herkunft ausgrenzen wollt, um euch ueber mich zu stellen.",
+      "Hoert sofort auf mit diesen unmoeglichen Spruechen, weil sich so etwas in unserer Schulklasse nicht gehoert!"
     ],
     correct: 1,
-    hint: "Die Antwort darf deutlich sein, bleibt aber bei dem konkreten Verhalten und der eigenen Wahrnehmung."
+    hint: "Klar Stellung beziehen, beim eigenen Gefühl bleiben und eine deutliche Bitte äußern."
   },
   {
-    text: "Dein Chef gibt dir vor anderen harte Kritik. Welche Ich-Botschaft waere angemessen?",
+    text: "Dein Chef gibt dir vor allen Kollegen harte Kritik. Welche Ich-Botschaft ist angemessen?",
     answers: [
-      "Ich kann Kritik besser annehmen, wenn wir sie unter vier Augen besprechen.",
-      "Ich fuehle mich von Ihnen vor allen anderen absichtlich vorgefuehrt.",
-      "Ich finde, Sie kritisieren mich viel haerter als die anderen Kollegen.",
-      "Kritik vor anderen Leuten ist einfach unprofessionell."
+      "Ich kann Kritik besser annehmen, wenn wir sie unter vier Augen besprechen, weil ich mich dann besser konzentriere.",
+      "Sie haben mich vor den Kollegen voellig grundlos bloessgestellt, weil Sie Ihre Launen an mir auslassen wollen!",
+      "Ich habe das Gefuehl, dass Sie mich vor dem gesamten Team absichtlich vorfuehren und schikanieren wollten.",
+      "Kritisieren Sie mich gefaelligst nie wieder vor anderen Mitarbeitern, sondern sprechen Sie mich privat an!"
     ],
     correct: 0,
-    hint: "Schwieriger Fall: Die Form der Kritik ansprechen, die Wirkung benennen und einen anderen Rahmen vorschlagen."
+    hint: "Den gewuenschten Rahmen ansprechen und erklären, warum dieser effektiver ist."
   },
   {
-    text: "Ein Freund sagt ein wichtiges Treffen kurzfristig ab und du hast extra andere Plaene verschoben. Welche Antwort ist die reifste Ich-Botschaft?",
+    text: "Ein Freund sagt ein Treffen kurzfristig ab, obwohl du Plaene verschoben hast. Welche ist die reifste Ich-Botschaft?",
     answers: [
-      "Ich habe das Gefuehl, dass unsere Verabredung fuer dich nie wirklich wichtig war.",
-      "Ich finde, du gehst sehr leichtfertig mit meiner Zeit und Planung um.",
-      "Ich bin enttaeuscht, weil ich fuer das Treffen andere Plaene verschoben habe.",
-      "Du bist wirklich unzuverlaessig und denkst nie an meine Zeit."
+      "Du bist total unzuverlaessig und denkst nie an meine Zeit, weil dir unsere Freundschaft voellig egal ist!",
+      "Ich habe das Gefuehl, dass dir unsere Treffen ueberhaupt nicht wichtig sind und du mich einfach nur hinhaeltst.",
+      "Ich bin enttaeuscht, wenn kurzfristig abgesagt wird, weil ich Plaene verschoben habe. Sag mir frueher Bescheid.",
+      "Du musst dich künftig wirklich mehr um unsere Verabredungen bemuehen, sonst treffe ich mich nicht mehr mit dir!"
     ],
     correct: 2,
-    hint: "Die staerkste Ich-Botschaft enthaelt eine konkrete Situation, Gefuehl, Grund und einen machbaren Wunsch."
+    hint: "Situation benennen, enttaeuschtes Gefühl äußern, Grund erklären und Bitte für die Zukunft formulieren."
   }
 ];
 
@@ -139,13 +139,13 @@ const replacementQuestions = [
   {
     text: "Ein Teammitglied veraendert deine Folie, ohne dich zu fragen. Welche Ich-Botschaft passt?",
     answers: [
-      "Ich habe das Gefuehl, dass du meine Arbeit nicht wirklich ernst nimmst.",
-      "Ich finde, du solltest nicht so ueber meine Folien bestimmen duerfen.",
-      "Du sollst meine Folien und meine Arbeit mehr respektieren.",
-      "Ich bin irritiert, wenn meine Folie ohne Absprache geaendert wird."
+      "Du pfuschst einfach in meinen Folien herum und bestimmst ueber alles, weil du immer recht haben willst!",
+      "Ich habe das Gefuehl, dass du meine Arbeit ueberhaupt nicht schaetzt und mich einfach uebergehen willst!",
+      "Lass kuenftig deine Finger von meinen Folien und veraendere nichts mehr, ohne mich vorher um Erlaubnis zu fragen!",
+      "Ich bin irritiert, wenn Folien ungefragt geaendert werden, weil mir Abstimmung wichtig ist. Sprechen wir das ab."
     ],
     correct: 3,
-    hint: "Auch hier gilt: konkretes Verhalten, eigenes Gefuehl, Grund und eine klare Bitte."
+    hint: "Vier Bausteine: Verhalten + Gefühl + Grund/Bedürfnis + Vereinbarung."
   }
 ];
 
